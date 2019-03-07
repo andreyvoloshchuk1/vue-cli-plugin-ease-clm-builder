@@ -1,0 +1,27 @@
+{
+  "name": "vue-cli-plugin-ease-clm-builder",
+  "version": "0.0.1",
+  "scripts": {
+    "push": "yarn unlink || yarn publish"
+  },
+  "dependencies": {
+    "@vue/cli-service": "^3.4.1",
+    "@vue/cli-shared-utils": "^3.4.1",
+    "chalk": "^2.4.2",
+    "fs-explorer-ui": "^1.0.8",
+    "fs-extra": "^7.0.1",
+    "webpack": "^4.29.6"
+  },
+  "devDependencies": {
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreyvoloshchuk1/vue-cli-plugin-ease-clm-builder"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "description": "vue-cli 3 plugin to help developing with MI Touch, Pharma Touch and Veeva CRM systems",
+  "author": "andreyvoloshchuk1",
+  "homepage": "https://github.com/andreyvoloshchuk1/vue-cli-plugin-ease-clm-builder#readme"
+}
