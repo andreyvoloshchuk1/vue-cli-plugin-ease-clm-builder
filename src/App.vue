@@ -1,6 +1,5 @@
 <template>
     <v-app id="app">
-
         <router-view></router-view>
     </v-app>
 </template>
@@ -24,12 +23,9 @@
         mounted(){
 
         },
-        computed: {
-
-        }
     }
 </script>
 
 <style lang="scss">
-    @import './style/main.scss';
+    @import "./style/main";
 </style>
