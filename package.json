@@ -14,12 +14,10 @@
     "chalk": "^2.4.2",
     "fs-explorer-ui": "^1.0.8",
     "fs-extra": "^7.0.1",
-    "material-design-icons-iconfont": "^4.0.5",
     "nightmare": "^3.0.1",
     "veevalibrary": "^4.0.8",
     "vue-router": "^3.0.2",
     "vue2-touch-events": "^1.1.2",
-    "vuetify": "^1.5.4",
     "vuex": "^3.0.1",
     "webpack": "^4.29.6"
   },
@@ -32,8 +30,7 @@
     "stylus-loader": "^3.0.1",
     "vue-cli-plugin-ease-clm-builder": "../vue-cli-plugin-ease-clm-builder",
     "vue-cli-plugin-vuetify": "^0.4.6",
-    "vue-svg-loader": "^0.12.0",
-    "vuetify-loader": "^1.0.5"
+    "vue-svg-loader": "^0.12.0"
   },
   "homepage": "https://github.com/andreyvoloshchuk1/vue-cli-plugin-ease-clm-builder#readme",
   "license": "MIT",

@@ -4,6 +4,7 @@ const fs = require('fs');
 const fse = require('fs-extra');
 const webpackBuild = require('../../../lib/webpack-build');
 const screenMaker = require('../../../lib/screen-maker');
+const assetsClean = require('../../../lib/assets-clean');
 const { structure } = require(path.join(root, 'src', 'clm.config'));
 
 
@@ -15,14 +16,7 @@ module.exports = async (api) => {
         console.log(`Building ${sl.id}`);
 
         await webpackBuild(api, sl);
-
-        // await (function(){
-        //     if (!fs.existsSync(`${process.env.VUE_APP_OUT_DIR_PATH}/assets`)){
-        //         fs.mkdirSync(`${process.env.VUE_APP_OUT_DIR_PATH}/assets`)
-        //     }
-        //     fse.copySync(`${process.env.VUE_APP_CLM_SRC}/slides/flow-1/${sl.id}/assets`, `${process.env.VUE_APP_OUT_DIR_PATH}/assets`);
-        // })();
-
+        await assetsClean(sl);
         await screenMaker(sl);
 
     }
